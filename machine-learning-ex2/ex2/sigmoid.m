@@ -9,8 +9,8 @@ g = zeros(size(z));
 % Instructions: Compute the sigmoid of each value of z (z can be a matrix,
 %               vector or scalar).
 
-
-
+% Euler's number `e` is calculated through exp(1).
+g = 1 ./ (1 + power(exp(1), -z));
 
 
 % =============================================================

@@ -15,11 +15,9 @@ p = zeros(m, 1);
 %               You should set p to a vector of 0's and 1's
 %
 
-
-
-
-
-
+pred = sigmoid(X * theta);
+p(find(pred >= 0.5)) = 1;
+p(find(pred < 0.5)) = 0;
 
 % =========================================================================
 
