@@ -30,11 +30,12 @@ X = [ones(m, 1) X];
 %       for each row.
 %       
 
+z = X * all_theta';
+h = sigmoid(z);
 
-
-
-
-
+% p corresponds to the index of the max element
+% and gets inserted into the actual vector p
+[max_p, p] = max(h, [], 2);
 
 % =========================================================================
 
